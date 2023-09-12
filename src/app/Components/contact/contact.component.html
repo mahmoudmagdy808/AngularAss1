@@ -1,0 +1,31 @@
+<section class="contact py-5 mt-5">
+    <div class="container">
+        <div class="contact-head d-flex flex-column text-center">
+            <h2>CONATCT SECTION</h2>
+            <div class="icon d-flex my-3 mx-auto">
+                <div class="line"></div>
+                <i class="fa-solid fa-star mx-3 "></i>
+                <div class="line"></div>
+            </div>
+        </div>
+        <div class="form w-75 mx-auto mt-3">
+            
+                <label [class]="{'opacity-100':flagName}" [style]="flagName ? 'top:0':'top:40px'" for="userName-input">userName:</label>
+                <input (input)="showNameLabel($event)" name="userNameInput" class="  form-input form-control" id="userName-input" type="text" placeholder="userName">
+            
+                <label [class]="{'opacity-100':flagAge}" [style]="flagAge ? 'top:0':'top:40px'" for="userAge-input">userAge:</label>
+                <input  (input)="showAgeLabel($event)" name="userAgeInput" class="form-input form-control" id="userAge-input" type="text" placeholder="userAge">
+            
+                <label [class]="{'opacity-100':flagEmail}" [style]="flagEmail ? 'top:0':'top:40px'" for="userEmail-input">userEmail:</label>
+                <input (input)="showEmailLabel($event)" name="userEmailInput" class="form-input form-control" id="userEmail-input" type="text" placeholder="userEmail">
+            
+                <label [class]="{'opacity-100':flagPassword}" [style]="flagPassword ? 'top:0':'top:40px'" for="userPassword-input">userPassword:</label>
+                <input (input)="showPasswordLabel($event)" name="userPasswordInput" class="form-input form-control" id="userPassword-input" type="text" placeholder="userPassword">
+
+            <button class="btn btn-success">send message</button>
+        </div>
+
+    </div>
+
+
+</section>

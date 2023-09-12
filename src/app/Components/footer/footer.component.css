@@ -1,0 +1,28 @@
+footer{
+    background-color: #2C3E50;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+}
+
+footer li{
+    margin: 15px;
+    width:30px;
+    height:30px;
+    border: 1px white solid;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-item{
+    width: 30%;
+    text-align: center;
+}
+.footer-bottom{
+    background-color: #222732;
+}

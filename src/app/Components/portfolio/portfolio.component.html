@@ -1,0 +1,50 @@
+<section class="portfolio py-5 mt-5">
+    <div class="container">
+        <div class="portfolio-head d-flex flex-column text-center">
+            <h2>START FRAMEWORK</h2>
+            <div class="icon d-flex my-3 mx-auto">
+                <div class="line"></div>
+                <i class="fa-solid fa-star mx-3 "></i>
+                <div class="line"></div>
+            </div>
+        </div>
+        <div class="img-layout position-relative">
+
+        </div>
+        <div class="row g-5">
+            <div class="col-md-4">
+                <div class="item" (click)="show($event)">
+                    <img src="assets/photo/poert1.png" class="w-100 rounded-3" alt="poert1">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="item" (click)="show($event)">
+                    <img src="assets/photo/port3.png" class="w-100 rounded-3" alt="poert1">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="item" (click)="show($event)">
+                    <img src="assets/photo/port2.png" class="w-100 rounded-3" alt="poert1">
+                </div>
+            </div>
+            <div class="col-md-4 ">
+                <div class="item" (click)="show($event)">
+                    <img src="assets/photo/poert1.png" class="w-100 rounded-3" alt="poert1">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="item" (click)="show($event)">
+                    <img src="assets/photo/port3.png" class="w-100 rounded-3" alt="poert1">
+                </div>
+            </div>
+            <div class="col-md-4" >
+                <div class="item" (click)="show($event)">
+                    <img src="assets/photo/port2.png" class="w-100 rounded-3" alt="poert1">
+                </div>
+            </div>
+        </div>
+        <div (click)="clickimg($event)" *ngIf="value != null  "class="img-lay position-fixed start-0 w-100 top-0 h-100 bg-primary bg-opacity-25 d-flex justify-content-center align-items-center" >
+            <img  [src]="value" class="rounded-3 w-50">
+        </div>
+    </div>
+</section>

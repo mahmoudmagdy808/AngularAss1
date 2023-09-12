@@ -1,0 +1,61 @@
+.line{
+    width: 100px;
+    height: 5px;
+    background-color: black;
+}
+
+.portfolio-head h2{
+    font-size: 40px;
+    line-height: 48px;
+    font-weight: 700;
+    color: #2c3e50;
+}
+
+.item{
+    position: relative;
+}
+
+.item::after{
+    content: '+';
+    font-size: 150px;
+    color: white;
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom: 0;
+    background-color:rgb(41, 177, 151);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.item-ii{
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 99999;
+    opacity: 0.9;
+}
+
+/* .layout{
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom: 0;
+    background-color:rgb(41, 177, 151);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.5s;
+} */
+.item:hover::after{
+    opacity: 0.9;
+    cursor: pointer;
+}
+
